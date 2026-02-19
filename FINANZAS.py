@@ -33,10 +33,13 @@ class FinanzasApp:
         self.tipo.grid(row=0, column=5, padx=5)
         self.tipo.current(0)
 
+        # 🟢 Botón verde
         tk.Button(frame_registro,
                   text="Agregar",
-                  bg="#FFB74D",
+                  bg="#4CAF50",
                   fg="white",
+                  activebackground="#388E3C",
+                  activeforeground="white",
                   command=self.agregar).grid(row=0, column=6, padx=10)
 
         # ====== 🔲 CASILLA 2: LISTA ======
@@ -58,6 +61,8 @@ class FinanzasApp:
                   text="Eliminar Seleccionado",
                   bg="#E57373",
                   fg="white",
+                  activebackground="#D32F2F",
+                  activeforeground="white",
                   command=self.eliminar).pack(pady=5)
 
         # ====== 🔲 CASILLA 3: RESUMEN ======
